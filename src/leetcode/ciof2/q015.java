@@ -21,19 +21,15 @@ public class q015 {
      * @param n
      * @return
      */
-    public static int hammingWeight2(int n) {
-        int res = 0;
-        int temp = 0;
-        for (int i = 0; i < n; i++) {
-            if(n != 0){
-                System.out.println(n);
+    public static void hammingWeight2(int n) {
+        for (int i = 1; i <= (n/2+1);i*=2) {
+            if( (n & i) == i ){
+                System.out.println(i);
             }
-            n >>>= i;
         }
-        return res;
     }
 
     public static void main(String[] args) {
-        System.out.println(hammingWeight(15));
+        hammingWeight2(31);
     }
 }
