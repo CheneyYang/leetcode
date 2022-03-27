@@ -1,7 +1,6 @@
 package leetcode.ciof2;
 
 
-import java.util.Arrays;
 
 /**
  * 二进制包含1的个数
