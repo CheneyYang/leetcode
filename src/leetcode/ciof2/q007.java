@@ -58,6 +58,10 @@ public class q007 {
         TreeNode right;
         int val;
 
+        public TreeNode(int i) {
+            this.val = i;
+        }
+
         public TreeNode getLeft() {
             return left;
         }
