@@ -27,7 +27,7 @@ public class q037 {
             return "[]";
         }
         StringBuilder res = new StringBuilder("[");
-        Queue<TreeNode> queue = new LinkedList<>() {{
+        Queue<TreeNode> queue = new LinkedList<TreeNode>() {{
             add(root);
         }};
         while (!queue.isEmpty()) {
@@ -53,7 +53,7 @@ public class q037 {
         }
         String[] values = data.substring(1, data.length() - 1).split(",");
         TreeNode root = new TreeNode(Integer.parseInt(values[0]));
-        LinkedList<TreeNode> queue = new LinkedList<>() {{
+        LinkedList<TreeNode> queue = new LinkedList<TreeNode>() {{
             add(root);
         }};
         int i = 1;
